@@ -18,8 +18,10 @@ sequenceDiagram
     PlayerN->>EOS: Sends playerN public key
 
     EOS->>Agones: Sends player public keys
+```
 
 
+```mermaid
 sequenceDiagram
     participant Agones
     participant EOS
@@ -41,8 +43,9 @@ sequenceDiagram
     Player1->>Agones: Uses match public key for secure communication
     Player2->>Agones: Uses match public key for secure communication
     PlayerN->>Agones: Uses match public key for secure communication
+```
 
-
+```mermaid
 sequenceDiagram
     participant Agones
     participant Player1
