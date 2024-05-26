@@ -39,3 +39,4 @@ sequenceDiagram
     Player1->>Player1: Discards player keys
     Player2->>Player2: Discards player keys
     PlayerN->>PlayerN: Discards player keys
+```
