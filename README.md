@@ -19,6 +19,14 @@ sequenceDiagram
 
     EOS->>Agones: Sends player public keys
 
+
+sequenceDiagram
+    participant Agones
+    participant EOS
+    participant Player1
+    participant Player2
+    participant PlayerN
+
     Agones->>Agones: Encrypts connection details with each player's public key
     Agones->>EOS: Sends encrypted details and match public key
 
@@ -34,7 +42,16 @@ sequenceDiagram
     Player2->>Agones: Uses match public key for secure communication
     PlayerN->>Agones: Uses match public key for secure communication
 
+
+sequenceDiagram
+    participant Agones
+    participant Player1
+    participant Player2
+    participant PlayerN
+
+    Note right of Agones: After the match ends
     Agones->>Agones: Discards match keys
+
     Player1->>Player1: Discards player keys
     Player2->>Player2: Discards player keys
     PlayerN->>PlayerN: Discards player keys
