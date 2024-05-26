@@ -1,4 +1,3 @@
-```mermaid
 sequenceDiagram
     participant Agones
     participant EOS
@@ -34,7 +33,7 @@ sequenceDiagram
     Player2->>Agones: Uses match public key for secure communication
     PlayerN->>Agones: Uses match public key for secure communication
 
-    Note over Agones,Player1,Player2,PlayerN: After the match ends
+    Note over Agones,Player1,Player2,PlayerN: After the match ends all keys are discarded
     Agones->>Agones: Discards match keys
     Player1->>Player1: Discards player keys
     Player2->>Player2: Discards player keys
