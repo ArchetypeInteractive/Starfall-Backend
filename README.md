@@ -29,7 +29,6 @@ sequenceDiagram
     Player2->>Player2: Uses match public key for secure communication
     PlayerN->>PlayerN: Uses match public key for secure communication
 
-    Note over Agones,Player1,Player2,PlayerN: After the match ends
     Agones->>Agones: Discards match keys
     Player1->>Player1: Discards player keys
     Player2->>Player2: Discards player keys
