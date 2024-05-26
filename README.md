@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Agones] -->|Generates match private key| B[Match Private Key]
     A -->|Generates match public key| C[Match Public Key]
